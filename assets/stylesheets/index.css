@@ -1,0 +1,36 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Color */
+/* -------------------------------------- */
+:root {
+	--black: #181818;
+	--lightBlack: #202020;
+	--grey: #8f8f8f;
+	--lightGrey: #313131;
+}
+
+/* Layout of Pages */
+/* -------------------------------------- */
+html,
+body {
+	box-sizing: border-box;
+	height: 100%;
+	background-color: var(--black);
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+/* Navigation Header */
+/* -------------------------------------- */
+.header {
+	background-color: var(--lightBlack);
+}

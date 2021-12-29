@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="author" content="Salvador Villalon" />
+		<meta
+			name="description"
+			content="The Odin Project: Embedding Images and Video"
+		/>
+		<meta name="keywords" content="HTML CSS" />
+		<link rel="stylesheet" href="../assets/stylesheets/reset.css" />
+		<link rel="stylesheet" href="../assets/stylesheets/index.css" />
+		<link
+			rel="shortcut icon"
+			href="../assets/images/favicon.svg"
+			type="image/x-icon"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+		/>
+		<title>The Odin Project: Embedding Images and Video Project</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="left-nav">
+				<span><i class="bi bi-list"></i></span>
+
+				<img src="../assets/images/logo.svg" alt="YouTube Logo" />
+			</nav>
+
+			<div class="search-box-container">
+				<input type="text" placeholder="Search" />
+
+				<span>
+					<i class="bi bi-search"></i>
+				</span>
+
+				<span>
+					<i class="bi bi-mic-fill"></i>
+				</span>
+			</div>
+
+			<nav>
+				<span>
+					<i class="bi bi-camera-video"></i>
+				</span>
+
+				<span>
+					<i class="bi bi-grid-3x3-gap"></i>
+				</span>
+
+				<span>
+					<i class="bi bi-bell-fill"></i>
+				</span>
+
+				<span>
+					<i class="bi bi-person-circle"></i>
+				</span>
+			</nav>
+		</header>
+
+		<main>
+			<article>
+				<div class="left-container">
+					<section class="video" arial-label="YouTube Video">
+						<!-- Contains Div for iframe youtube -->
+						<div class="iframe-container">
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/JC82Il2cjqA"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+						</div>
+					</section>
+
+					<section class="video-description">
+						<div class="video-metadata-container">
+							<h1>
+								2-HOUR STUDY WITH ME🌃 / calm lofi🎸 + white
+								noise / Tokyo-Skytree at SUNSET / with
+								countdown+alarm
+							</h1>
+
+							<div class="video-data-options-container">
+								<span>1,447,066 views</span>
+
+								<!-- Like Icon -->
+								<span>
+									<span>
+										<i
+											class="bi bi-hand-thumbs-up-fill"
+										></i>
+									</span>
+									<span>36K</span>
+								</span>
+
+								<!-- Unlike Icon -->
+								<span>
+									<span>
+										<i
+											class="bi bi-hand-thumbs-down-fill"
+										></i>
+									</span>
+									<span>DISLIKE</span>
+								</span>
+
+								<!-- Share Icon -->
+								<span>
+									<span>
+										<i class="bi bi-box-arrow-up-right"></i>
+									</span>
+									<span>SHARE</span>
+								</span>
+
+								<!-- Save Icon -->
+								<span>
+									<span>
+										<i class="bi bi-box-arrow-down"></i>
+									</span>
+									<span>SAVE</span>
+								</span>
+
+								<!-- Three Dots Icon -->
+								<span>
+									<span>
+										<i class="bi bi-three-dots"></i>
+									</span>
+								</span>
+							</div>
+						</div>
+					</section>
+
+					<hr />
+
+					<section
+						class="author-video"
+						arial-label="Author of Video Description"
+					>
+						<span>
+							<img src="../assets/images/khan_logo.svg" />
+						</span>
+
+						<div class="author-description-container">
+							<p>Khan Academy</p>
+
+							<p>7.04M subscribers</p>
+
+							<p>
+								Khan Academy is on a mission to unlock the
+								world's potential. Most people think their
+								intelligence is fixed. The science says it’s
+								not.
+							</p>
+
+							<p>SHOW MORE</p>
+						</div>
+
+						<span>
+							<button>SUBSCRIBE</button>
+						</span>
+					</section>
+
+					<hr />
+
+					<section class="comments">
+						<div class="comments-header">
+							<h2>2,260 Comments</h2>
+
+							<div>
+								<span>
+									<i class="bi bi-filter-left"></i>
+								</span>
+
+								<span>SORT BY</span>
+							</div>
+						</div>
+
+						<div class="input-comment-container">
+							<span>
+								<i class="bi bi-person-circle"></i>
+							</span>
+
+							<input
+								type="text"
+								placeholder="Commenting publicly here"
+							/>
+						</div>
+
+						<div class="posted-comments-container">
+							<div class="posted-comment-item-container">
+								<img
+									src="https://yt3.ggpht.com/ytc/AKedOLS2-nNgvxu48uSPrk9LiVQc_zUvaZ37q6TYDMVWwA=s88-c-k-c0x00ffffff-no-rj"
+									alt="User Image"
+								/>
+
+								<div class="user-comment-container">
+									<span>Andrea Scarlett</span>
+									<span>5 years ago</span>
+									<p>
+										I used to hate physics and maths back in
+										high school because they were 'too hard'
+										and I thought i was never going to be
+										able to understand them.. and now, 5
+										years later.. I'm halfway through a
+										career in Earth Sciences. I can't
+										believe I actually got to love this so
+										much.
+									</p>
+
+									<div class="thumbs-container">
+										<span>
+											<i class="bi bi-hand-thumbs-up"></i>
+										</span>
+										<span>1.4k</span>
+										<span>
+											<i
+												class="bi bi-hand-thumbs-down"
+											></i>
+										</span>
+									</div>
+
+									<div class="view-more-replies-container">
+										<span
+											><i
+												class="bi bi-caret-down-fill"
+											></i
+										></span>
+
+										<span>View 27 replies</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</article>
+
+			<article>
+				<div class="right-container">
+					<aside>
+						<section
+							class="recommendations"
+							aria-label="Next Video Recommendations"
+						>
+							<div class="recommendations-container">
+								<div class="recommendation-item-container">
+									<div>
+										<img
+											src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
+											alt="Video Thumbnail 1"
+										/>
+									</div>
+
+									<div>
+										<p>
+											The first 20 hours -- how to learn
+											anything | Josh Kaufman...
+										</p>
+										<p>TEDx Talks</p>
+										<span>28M views</span>
+										<span>&#8226;</span>
+										<span>8 years ago</span>
+									</div>
+								</div>
+
+								<div class="recommendation-item-container">
+									<div>
+										<img
+											src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
+											alt="Video Thumbnail 1"
+										/>
+									</div>
+
+									<div>
+										<p>
+											The first 20 hours -- how to learn
+											anything | Josh Kaufman...
+										</p>
+										<p>TEDx Talks</p>
+										<span>28M views</span>
+										<span>&#8226;</span>
+										<span>8 years ago</span>
+									</div>
+								</div>
+
+								<div class="recommendation-item-container">
+									<div>
+										<img
+											src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
+											alt="Video Thumbnail 1"
+										/>
+									</div>
+
+									<div>
+										<p>
+											The first 20 hours -- how to learn
+											anything | Josh Kaufman...
+										</p>
+										<p>TEDx Talks</p>
+										<span>28M views</span>
+										<span>&#8226;</span>
+										<span>8 years ago</span>
+									</div>
+								</div>
+
+								<div class="recommendation-item-container">
+									<div>
+										<img
+											src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
+											alt="Video Thumbnail 1"
+										/>
+									</div>
+
+									<div>
+										<p>
+											The first 20 hours -- how to learn
+											anything | Josh Kaufman...
+										</p>
+										<p>TEDx Talks</p>
+										<span>28M views</span>
+										<span>&#8226;</span>
+										<span>8 years ago</span>
+									</div>
+								</div>
+
+								<div class="recommendation-item-container">
+									<div>
+										<img
+											src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
+											alt="Video Thumbnail 1"
+										/>
+									</div>
+
+									<div>
+										<p>
+											The first 20 hours -- how to learn
+											anything | Josh Kaufman...
+										</p>
+										<p>TEDx Talks</p>
+										<span>28M views</span>
+										<span>&#8226;</span>
+										<span>8 years ago</span>
+									</div>
+								</div>
+							</div>
+						</section>
+					</aside>
+				</div>
+			</article>
+		</main>
+
+		<footer></footer>
+	</body>
+</html>
