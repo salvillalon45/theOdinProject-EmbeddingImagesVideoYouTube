@@ -13,6 +13,10 @@
 		<link rel="stylesheet" href="../assets/stylesheets/reset.css" />
 		<link rel="stylesheet" href="../assets/stylesheets/index.css" />
 		<link
+			rel="stylesheet"
+			href="../public/assets/stylesheets/tailwind.css"
+		/>
+		<link
 			rel="shortcut icon"
 			href="../assets/images/favicon.svg"
 			type="image/x-icon"
@@ -24,336 +28,839 @@
 		<title>The Odin Project: Embedding Images and Video Project</title>
 	</head>
 	<body>
-		<header class="header">
-			<nav class="left-nav">
-				<span><i class="bi bi-list"></i></span>
+		<header class="header flex justify-between items-center">
+			<nav class="left-nav flex items-center">
+				<div class="pb-0.5 m-4">
+					<i
+						class="bi bi-list text-white text-2xl cursor-pointer"
+					></i>
+				</div>
 
-				<img src="../assets/images/logo.svg" alt="YouTube Logo" />
+				<img
+					class="inline m-4 h-8 cursor-pointer"
+					src="../assets/images/logo.svg"
+					alt="YouTube Logo"
+				/>
 			</nav>
 
-			<div class="search-box-container">
-				<input type="text" placeholder="Search" />
+			<div class="search-box-container flex items-center">
+				<input
+					class="w-full bg-searchBarBlack text-white p-2"
+					type="text"
+					placeholder="Search"
+				/>
 
-				<span>
-					<i class="bi bi-search"></i>
-				</span>
+				<div class="cursor-pointer p-2.5 px-6 bg-darkGrey">
+					<i class="bi bi-search text-white"></i>
+				</div>
 
-				<span>
-					<i class="bi bi-mic-fill"></i>
-				</span>
+				<div
+					class="
+						cursor-pointer
+						bg-black
+						p-2
+						ml-2
+						rounded-fiftyPercentBorderRadius
+					"
+				>
+					<i class="bi bi-mic-fill text-2xl text-white"></i>
+				</div>
 			</div>
 
-			<nav>
-				<span>
-					<i class="bi bi-camera-video"></i>
+			<nav class="right-nav">
+				<span class="m-2 cursor-pointer">
+					<i class="bi bi-camera-video text-white text-2xl"></i>
 				</span>
 
-				<span>
-					<i class="bi bi-grid-3x3-gap"></i>
+				<span class="m-2 cursor-pointer">
+					<i class="bi bi-grid-3x3-gap text-white text-2xl"></i>
 				</span>
 
-				<span>
-					<i class="bi bi-bell-fill"></i>
+				<span class="m-2 cursor-pointer">
+					<i class="bi bi-bell-fill text-white text-2xl"></i>
 				</span>
 
-				<span>
-					<i class="bi bi-person-circle"></i>
+				<span class="m-2 cursor-pointer">
+					<i class="bi bi-person-circle text-white text-2xl"></i>
 				</span>
 			</nav>
 		</header>
 
 		<main>
-			<article>
-				<div class="left-container">
-					<section class="video" arial-label="YouTube Video">
-						<!-- Contains Div for iframe youtube -->
-						<div class="iframe-container">
-							<iframe
-								width="560"
-								height="315"
-								src="https://www.youtube.com/embed/JC82Il2cjqA"
-								title="YouTube video player"
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen
-							></iframe>
-						</div>
-					</section>
-
-					<section class="video-description">
-						<div class="video-metadata-container">
-							<h1>
-								2-HOUR STUDY WITH ME🌃 / calm lofi🎸 + white
-								noise / Tokyo-Skytree at SUNSET / with
-								countdown+alarm
-							</h1>
-
-							<div class="video-data-options-container">
-								<span>1,447,066 views</span>
-
-								<!-- Like Icon -->
-								<span>
-									<span>
-										<i
-											class="bi bi-hand-thumbs-up-fill"
-										></i>
-									</span>
-									<span>36K</span>
-								</span>
-
-								<!-- Unlike Icon -->
-								<span>
-									<span>
-										<i
-											class="bi bi-hand-thumbs-down-fill"
-										></i>
-									</span>
-									<span>DISLIKE</span>
-								</span>
-
-								<!-- Share Icon -->
-								<span>
-									<span>
-										<i class="bi bi-box-arrow-up-right"></i>
-									</span>
-									<span>SHARE</span>
-								</span>
-
-								<!-- Save Icon -->
-								<span>
-									<span>
-										<i class="bi bi-box-arrow-down"></i>
-									</span>
-									<span>SAVE</span>
-								</span>
-
-								<!-- Three Dots Icon -->
-								<span>
-									<span>
-										<i class="bi bi-three-dots"></i>
-									</span>
-								</span>
+			<div class="mainContentWrapper grid gap-4">
+				<article>
+					<div class="left-container ml-20">
+						<section class="video" arial-label="YouTube Video">
+							<!-- Contains Div for iframe youtube -->
+							<div class="iframe-container">
+								<iframe
+									width="560"
+									height="315"
+									src="https://www.youtube.com/embed/JC82Il2cjqA"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
 							</div>
-						</div>
-					</section>
+						</section>
 
-					<hr />
+						<section class="video-description">
+							<div
+								class="video-metadata-container text-white mt-4"
+							>
+								<h1 class="text-2xl">You Can Learn Anything</h1>
 
-					<section
-						class="author-video"
-						arial-label="Author of Video Description"
-					>
-						<span>
-							<img src="../assets/images/khan_logo.svg" />
-						</span>
+								<div
+									class="
+										video-data-options-container
+										text-white
+										flex
+										justify-between
+									"
+								>
+									<div class="text-subText">
+										<span>7,327,397 views</span>
+										<span>&#8226;</span>
+										<span>Aug 19, 2014</span>
+									</div>
 
-						<div class="author-description-container">
-							<p>Khan Academy</p>
-
-							<p>7.04M subscribers</p>
-
-							<p>
-								Khan Academy is on a mission to unlock the
-								world's potential. Most people think their
-								intelligence is fixed. The science says it’s
-								not.
-							</p>
-
-							<p>SHOW MORE</p>
-						</div>
-
-						<span>
-							<button>SUBSCRIBE</button>
-						</span>
-					</section>
-
-					<hr />
-
-					<section class="comments">
-						<div class="comments-header">
-							<h2>2,260 Comments</h2>
-
-							<div>
-								<span>
-									<i class="bi bi-filter-left"></i>
-								</span>
-
-								<span>SORT BY</span>
-							</div>
-						</div>
-
-						<div class="input-comment-container">
-							<span>
-								<i class="bi bi-person-circle"></i>
-							</span>
-
-							<input
-								type="text"
-								placeholder="Commenting publicly here"
-							/>
-						</div>
-
-						<div class="posted-comments-container">
-							<div class="posted-comment-item-container">
-								<img
-									src="https://yt3.ggpht.com/ytc/AKedOLS2-nNgvxu48uSPrk9LiVQc_zUvaZ37q6TYDMVWwA=s88-c-k-c0x00ffffff-no-rj"
-									alt="User Image"
-								/>
-
-								<div class="user-comment-container">
-									<span>Andrea Scarlett</span>
-									<span>5 years ago</span>
-									<p>
-										I used to hate physics and maths back in
-										high school because they were 'too hard'
-										and I thought i was never going to be
-										able to understand them.. and now, 5
-										years later.. I'm halfway through a
-										career in Earth Sciences. I can't
-										believe I actually got to love this so
-										much.
-									</p>
-
-									<div class="thumbs-container">
-										<span>
-											<i class="bi bi-hand-thumbs-up"></i>
+									<div>
+										<!-- Like Icon -->
+										<span class="p-2 cursor-pointer">
+											<span>
+												<i
+													class="bi bi-hand-thumbs-up"
+												></i>
+											</span>
+											<span>101K</span>
 										</span>
-										<span>1.4k</span>
-										<span>
-											<i
-												class="bi bi-hand-thumbs-down"
-											></i>
+
+										<!-- Unlike Icon -->
+										<span class="p-2 cursor-pointer">
+											<span>
+												<i
+													class="
+														bi bi-hand-thumbs-down
+													"
+												></i>
+											</span>
+											<span>DISLIKE</span>
 										</span>
-									</div>
 
-									<div class="view-more-replies-container">
-										<span
-											><i
-												class="bi bi-caret-down-fill"
-											></i
-										></span>
+										<!-- Share Icon -->
+										<span class="p-2 cursor-pointer">
+											<span>
+												<i
+													class="
+														bi bi-box-arrow-up-right
+													"
+												></i>
+											</span>
+											<span>SHARE</span>
+										</span>
 
-										<span>View 27 replies</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</article>
+										<!-- Save Icon -->
+										<span class="p-2 cursor-pointer">
+											<span>
+												<i
+													class="bi bi-box-arrow-down"
+												></i>
+											</span>
+											<span>SAVE</span>
+										</span>
 
-			<article>
-				<div class="right-container">
-					<aside>
-						<section
-							class="recommendations"
-							aria-label="Next Video Recommendations"
-						>
-							<div class="recommendations-container">
-								<div class="recommendation-item-container">
-									<div>
-										<img
-											src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
-											alt="Video Thumbnail 1"
-										/>
-									</div>
-
-									<div>
-										<p>
-											The first 20 hours -- how to learn
-											anything | Josh Kaufman...
-										</p>
-										<p>TEDx Talks</p>
-										<span>28M views</span>
-										<span>&#8226;</span>
-										<span>8 years ago</span>
-									</div>
-								</div>
-
-								<div class="recommendation-item-container">
-									<div>
-										<img
-											src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
-											alt="Video Thumbnail 1"
-										/>
-									</div>
-
-									<div>
-										<p>
-											The first 20 hours -- how to learn
-											anything | Josh Kaufman...
-										</p>
-										<p>TEDx Talks</p>
-										<span>28M views</span>
-										<span>&#8226;</span>
-										<span>8 years ago</span>
-									</div>
-								</div>
-
-								<div class="recommendation-item-container">
-									<div>
-										<img
-											src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
-											alt="Video Thumbnail 1"
-										/>
-									</div>
-
-									<div>
-										<p>
-											The first 20 hours -- how to learn
-											anything | Josh Kaufman...
-										</p>
-										<p>TEDx Talks</p>
-										<span>28M views</span>
-										<span>&#8226;</span>
-										<span>8 years ago</span>
-									</div>
-								</div>
-
-								<div class="recommendation-item-container">
-									<div>
-										<img
-											src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
-											alt="Video Thumbnail 1"
-										/>
-									</div>
-
-									<div>
-										<p>
-											The first 20 hours -- how to learn
-											anything | Josh Kaufman...
-										</p>
-										<p>TEDx Talks</p>
-										<span>28M views</span>
-										<span>&#8226;</span>
-										<span>8 years ago</span>
-									</div>
-								</div>
-
-								<div class="recommendation-item-container">
-									<div>
-										<img
-											src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
-											alt="Video Thumbnail 1"
-										/>
-									</div>
-
-									<div>
-										<p>
-											The first 20 hours -- how to learn
-											anything | Josh Kaufman...
-										</p>
-										<p>TEDx Talks</p>
-										<span>28M views</span>
-										<span>&#8226;</span>
-										<span>8 years ago</span>
+										<!-- Three Dots Icon -->
+										<span class="p-2 cursor-pointer">
+											<span>
+												<i class="bi bi-three-dots"></i>
+											</span>
+										</span>
 									</div>
 								</div>
 							</div>
 						</section>
-					</aside>
-				</div>
-			</article>
+
+						<hr class="mt-4 line" />
+
+						<section
+							class="author-video"
+							arial-label="Author of Video Description"
+						>
+							<div class="my-4 flex">
+								<img
+									class="h-12 cursor-pointer"
+									alt="Khan Academy Logo"
+									src="../assets/images/khan_logo.svg"
+								/>
+
+								<div
+									class="
+										author-description-container
+										text-white
+										mx-4
+									"
+								>
+									<div class="flex justify-between">
+										<div>
+											<div class="flex">
+												<p class="cursor-pointer">
+													Khan Academy
+												</p>
+												<div>
+													<i
+														class="
+															bi
+															bi-patch-check-fill
+															text-subText
+															ml-2
+														"
+													></i>
+												</div>
+											</div>
+
+											<p class="text-subText">
+												7.04M subscribers
+											</p>
+										</div>
+
+										<button class="subscribe-button">
+											SUBSCRIBE
+										</button>
+									</div>
+
+									<p class="my-4">
+										Khan Academy is on a mission to unlock
+										the world's potential. Most people think
+										their intelligence is fixed. The science
+										says it’s not.
+									</p>
+
+									<p
+										class="
+											cursor-pointer
+											text-subText
+											font-medium
+										"
+									>
+										SHOW MORE
+									</p>
+								</div>
+							</div>
+						</section>
+
+						<hr class="mt-4 line" />
+
+						<section class="comments">
+							<div class="comments-header mt-4 flex">
+								<h2 class="text-white">2,260 Comments</h2>
+
+								<div class="ml-12 flex items-center">
+									<span>
+										<i
+											class="
+												bi bi-filter-left
+												text-white text-3xl
+											"
+										></i>
+									</span>
+
+									<span
+										class="
+											text-white
+											font-medium
+											ml-4
+											pb-0.5
+										"
+										>SORT BY</span
+									>
+								</div>
+							</div>
+
+							<div class="input-comment-container flex my-4">
+								<span>
+									<i
+										class="
+											bi bi-person-circle
+											text-white text-4xl
+										"
+									></i>
+								</span>
+
+								<input
+									class="comment-input text-subText"
+									type="text"
+									placeholder="Add a public comment"
+								/>
+							</div>
+
+							<div class="posted-comments-container my-8">
+								<div
+									class="
+										posted-comment-item-container
+										my-4
+										flex
+									"
+								>
+									<img
+										class="comment-user-avatar"
+										src="https://yt3.ggpht.com/ytc/AKedOLSS01dmD4HzCUFfucDDJffx6RsqPYC_SV4ymqBc7g=s88-c-k-c0x00ffffff-no-rj"
+										alt="User Image"
+									/>
+
+									<div
+										class="
+											user-comment-container
+											text-white
+											ml-4
+										"
+									>
+										<span class="font-medium"
+											>everpurple</span
+										>
+										<span class="text-subText"
+											>5 years ago</span
+										>
+										<p>
+											This is honestly so motivating. We
+											all start at zero, and you have to
+											try your hardest to make it to 100.
+										</p>
+
+										<div class="thumbs-container my-4">
+											<span class="p-2">
+												<span>
+													<i
+														class="
+															bi bi-hand-thumbs-up
+														"
+													></i>
+												</span>
+												<span class="text-subText"
+													>1.2k</span
+												>
+											</span>
+
+											<span class="p-2">
+												<span>
+													<i
+														class="
+															bi
+															bi-hand-thumbs-down
+														"
+													></i>
+												</span>
+											</span>
+
+											<span
+												class="
+													text-subText
+													cursor-pointer
+													font-medium
+													p-2
+												"
+												>REPLY</span
+											>
+										</div>
+
+										<div
+											class="view-more-replies-container"
+										>
+											<span
+												><i
+													class="
+														text-blue
+														bi bi-caret-down-fill
+													"
+												></i
+											></span>
+
+											<span class="text-blue font-medium"
+												>View 20 replies</span
+											>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="
+										posted-comment-item-container
+										my-4
+										flex
+									"
+								>
+									<img
+										class="comment-user-avatar"
+										src="https://yt3.ggpht.com/ytc/AKedOLS2-nNgvxu48uSPrk9LiVQc_zUvaZ37q6TYDMVWwA=s88-c-k-c0x00ffffff-no-rj"
+										alt="User Image"
+									/>
+
+									<div
+										class="
+											user-comment-container
+											text-white
+											ml-4
+										"
+									>
+										<span class="font-medium"
+											>Andrea Scarlett</span
+										>
+										<span class="text-subText"
+											>5 years ago</span
+										>
+										<p>
+											I used to hate physics and maths
+											back in high school because they
+											were 'too hard' and I thought i was
+											never going to be able to understand
+											them.. and now, 5 years later.. I'm
+											halfway through a career in Earth
+											Sciences. I can't believe I actually
+											got to love this so much.
+										</p>
+
+										<div class="thumbs-container my-4">
+											<span class="p-2">
+												<span>
+													<i
+														class="
+															bi bi-hand-thumbs-up
+														"
+													></i>
+												</span>
+												<span class="text-subText"
+													>1.4k</span
+												>
+											</span>
+
+											<span class="p-2">
+												<span>
+													<i
+														class="
+															bi
+															bi-hand-thumbs-down
+														"
+													></i>
+												</span>
+											</span>
+
+											<span
+												class="
+													text-subText
+													cursor-pointer
+													font-medium
+													p-2
+												"
+												>REPLY</span
+											>
+										</div>
+
+										<div
+											class="view-more-replies-container"
+										>
+											<span
+												><i
+													class="
+														text-blue
+														bi bi-caret-down-fill
+													"
+												></i
+											></span>
+
+											<span class="text-blue font-medium"
+												>View 27 replies</span
+											>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="
+										posted-comment-item-container
+										my-4
+										flex
+									"
+								>
+									<img
+										class="comment-user-avatar"
+										src="https://yt3.ggpht.com/ytc/AKedOLS2-nNgvxu48uSPrk9LiVQc_zUvaZ37q6TYDMVWwA=s88-c-k-c0x00ffffff-no-rj"
+										alt="User Image"
+									/>
+
+									<div
+										class="
+											user-comment-container
+											text-white
+											ml-4
+										"
+									>
+										<span class="font-medium"
+											>Ellen Cahoon</span
+										>
+										<span class="text-subText"
+											>5 years ago</span
+										>
+										<p>
+											this is the most motivational video
+											on the internet
+										</p>
+
+										<div class="thumbs-container my-4">
+											<span class="p-2">
+												<span>
+													<i
+														class="
+															bi bi-hand-thumbs-up
+														"
+													></i>
+												</span>
+												<span class="text-subText"
+													>4.6k</span
+												>
+											</span>
+
+											<span class="p-2">
+												<span>
+													<i
+														class="
+															bi
+															bi-hand-thumbs-down
+														"
+													></i>
+												</span>
+											</span>
+
+											<span
+												class="
+													text-subText
+													cursor-pointer
+													font-medium
+													p-2
+												"
+												>REPLY</span
+											>
+										</div>
+
+										<div
+											class="view-more-replies-container"
+										>
+											<span
+												><i
+													class="
+														text-blue
+														bi bi-caret-down-fill
+													"
+												></i
+											></span>
+
+											<span class="text-blue font-medium"
+												>View 32 replies</span
+											>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="
+										posted-comment-item-container
+										my-4
+										flex
+									"
+								>
+									<img
+										class="comment-user-avatar"
+										src="https://yt3.ggpht.com/ytc/AKedOLRqOtvuFxI0Eo7GDgbdSdikHVeFMsnpdpGzhR9g6w=s88-c-k-c0x00ffffff-no-rj"
+										alt="User Image"
+									/>
+
+									<div
+										class="
+											user-comment-container
+											text-white
+											ml-4
+										"
+									>
+										<span class="font-medium"
+											>Andrea Scarlett</span
+										>
+										<span class="text-subText"
+											>5 years ago</span
+										>
+										<p>
+											I used to hate physics and maths
+											back in high school because they
+											were 'too hard' and I thought i was
+											never going to be able to understand
+											them.. and now, 5 years later.. I'm
+											halfway through a career in Earth
+											Sciences. I can't believe I actually
+											got to love this so much.
+										</p>
+
+										<div class="thumbs-container my-4">
+											<span class="p-2">
+												<span>
+													<i
+														class="
+															bi bi-hand-thumbs-up
+														"
+													></i>
+												</span>
+												<span class="text-subText"
+													>1.4k</span
+												>
+											</span>
+
+											<span class="p-2">
+												<span>
+													<i
+														class="
+															bi
+															bi-hand-thumbs-down
+														"
+													></i>
+												</span>
+											</span>
+
+											<span
+												class="
+													text-subText
+													cursor-pointer
+													font-medium
+													p-2
+												"
+												>REPLY</span
+											>
+										</div>
+
+										<div
+											class="view-more-replies-container"
+										>
+											<span
+												><i
+													class="
+														text-blue
+														bi bi-caret-down-fill
+													"
+												></i
+											></span>
+
+											<span class="text-blue font-medium"
+												>View 27 replies</span
+											>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="
+										posted-comment-item-container
+										flex
+										my-4
+									"
+								>
+									<img
+										class="comment-user-avatar"
+										src="https://yt3.ggpht.com/ytc/AKedOLS2-nNgvxu48uSPrk9LiVQc_zUvaZ37q6TYDMVWwA=s88-c-k-c0x00ffffff-no-rj"
+										alt="User Image"
+									/>
+
+									<div
+										class="
+											user-comment-container
+											text-white
+											ml-4
+										"
+									>
+										<span class="font-medium"
+											>Andrea Scarlett</span
+										>
+										<span class="text-subText"
+											>5 years ago</span
+										>
+										<p>
+											I used to hate physics and maths
+											back in high school because they
+											were 'too hard' and I thought i was
+											never going to be able to understand
+											them.. and now, 5 years later.. I'm
+											halfway through a career in Earth
+											Sciences. I can't believe I actually
+											got to love this so much.
+										</p>
+
+										<div class="thumbs-container my-4">
+											<span class="p-2">
+												<span>
+													<i
+														class="
+															bi bi-hand-thumbs-up
+														"
+													></i>
+												</span>
+												<span class="text-subText"
+													>1.4k</span
+												>
+											</span>
+
+											<span class="p-2">
+												<span>
+													<i
+														class="
+															bi
+															bi-hand-thumbs-down
+														"
+													></i>
+												</span>
+											</span>
+
+											<span
+												class="
+													text-subText
+													cursor-pointer
+													font-medium
+													p-2
+												"
+												>REPLY</span
+											>
+										</div>
+
+										<div
+											class="view-more-replies-container"
+										>
+											<span
+												><i
+													class="
+														text-blue
+														bi bi-caret-down-fill
+													"
+												></i
+											></span>
+
+											<span class="text-blue font-medium"
+												>View 27 replies</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</article>
+
+				<article>
+					<div class="right-container">
+						<aside>
+							<section
+								class="recommendations"
+								aria-label="Next Video Recommendations"
+							>
+								<div class="recommendations-container">
+									<div class="recommendation-item-container">
+										<div>
+											<img
+												src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
+												alt="Video Thumbnail 1"
+											/>
+										</div>
+
+										<div>
+											<p>
+												The first 20 hours -- how to
+												learn anything | Josh Kaufman...
+											</p>
+											<p>TEDx Talks</p>
+											<span>28M views</span>
+											<span>&#8226;</span>
+											<span>8 years ago</span>
+										</div>
+									</div>
+
+									<div class="recommendation-item-container">
+										<div>
+											<img
+												src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
+												alt="Video Thumbnail 1"
+											/>
+										</div>
+
+										<div>
+											<p>
+												The first 20 hours -- how to
+												learn anything | Josh Kaufman...
+											</p>
+											<p>TEDx Talks</p>
+											<span>28M views</span>
+											<span>&#8226;</span>
+											<span>8 years ago</span>
+										</div>
+									</div>
+
+									<div class="recommendation-item-container">
+										<div>
+											<img
+												src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
+												alt="Video Thumbnail 1"
+											/>
+										</div>
+
+										<div>
+											<p>
+												The first 20 hours -- how to
+												learn anything | Josh Kaufman...
+											</p>
+											<p>TEDx Talks</p>
+											<span>28M views</span>
+											<span>&#8226;</span>
+											<span>8 years ago</span>
+										</div>
+									</div>
+
+									<div class="recommendation-item-container">
+										<div>
+											<img
+												src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
+												alt="Video Thumbnail 1"
+											/>
+										</div>
+
+										<div>
+											<p>
+												The first 20 hours -- how to
+												learn anything | Josh Kaufman...
+											</p>
+											<p>TEDx Talks</p>
+											<span>28M views</span>
+											<span>&#8226;</span>
+											<span>8 years ago</span>
+										</div>
+									</div>
+
+									<div class="recommendation-item-container">
+										<div>
+											<img
+												src="https://i.ytimg.com/an_webp/5MgBikgcWnY/mqdefault_6s.webp?du=3000&sqp=CJ79ro4G&rs=AOn4CLCTPUzZqh6jpThOCmLPKlcxB3uUzg"
+												alt="Video Thumbnail 1"
+											/>
+										</div>
+
+										<div>
+											<p>
+												The first 20 hours -- how to
+												learn anything | Josh Kaufman...
+											</p>
+											<p>TEDx Talks</p>
+											<span>28M views</span>
+											<span>&#8226;</span>
+											<span>8 years ago</span>
+										</div>
+									</div>
+								</div>
+							</section>
+						</aside>
+					</div>
+				</article>
+			</div>
 		</main>
 
 		<footer></footer>
