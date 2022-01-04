@@ -28,3 +28,5 @@ To fix it I did the following:
 
 https://stackoverflow.com/questions/65259436/cannot-find-module-autoprefixer-when-running-npx-tailwindcss-init-p-command
 https://stackoverflow.com/questions/70364258/tailwindcss-3-do-not-init-on-windows-10
+
+

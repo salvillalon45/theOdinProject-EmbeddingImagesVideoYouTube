@@ -48,11 +48,16 @@ main {
 	}
 }
 
+/* Main Content Wrapper Grid */
+/* -------------------------------------- */
 .mainContentWrapper {
+	display: grid;
 	grid-template: auto 1fr / 2fr 1fr;
 	padding: 2rem;
 }
 
+/* iframe */
+/* -------------------------------------- */
 .iframe-container {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -68,6 +73,8 @@ main {
 	height: 100%;
 }
 
+/* Divider line between YouTube Author */
+/* -------------------------------------- */
 .line {
 	border: 0.01rem solid var(--darkGrey);
 	background-color: var(--darkGrey);
@@ -84,6 +91,8 @@ main {
 	background-color: #bd0000;
 }
 
+/* Comments */
+/* -------------------------------------- */
 .comment-input {
 	flex-grow: 1;
 	align-self: self-start;
@@ -98,4 +107,93 @@ main {
 .comment-user-avatar {
 	border-radius: 50%;
 	height: 3rem;
+}
+
+/* Thumbnail */
+/* -------------------------------------- */
+.thumbnail-image-container {
+	position: relative;
+	display: flex;
+}
+
+.thumbnail-image-container,
+.recommendation-item-container,
+.thumbnail-info-container {
+	cursor: pointer;
+}
+
+.thumbnail-image-container::before {
+	content: attr(data-duration);
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.85);
+	color: white;
+	right: 5px;
+	bottom: 5px;
+	font-weight: 500;
+	padding: 0.1em 0.3em;
+	border-radius: 0.3em;
+	font-size: 0.9rem;
+}
+
+.thumbnail-img-overlay {
+	visibility: hidden;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	top: 0;
+}
+
+.thumbnail-image-container:hover .thumbnail-img-overlay {
+	visibility: initial;
+}
+
+.thumbnail-img-overlay .btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	margin: 0.4rem 0.4rem 0 0;
+	border-radius: 2px;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.thumbnail-img-overlay img {
+	width: 20px;
+	height: 20px;
+}
+
+.recommendation-item-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem 1rem;
+}
+
+/* Media Queries */
+/* -------------------------------------- */
+@media only screen and (max-width: 1020px) {
+	.mainContentWrapper {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (min-width: 2560px) {
+	.thumbnail-image-container::before {
+		right: 95px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.thumbnail-image-container::before {
+		right: 30px;
+	}
+}
+
+@media only screen and (max-width: 426px) {
+	.thumbnail-image-container::before {
+		right: 5px;
+	}
 }
