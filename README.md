@@ -1,5 +1,5 @@
 <h1 align="center">
-[The Odin Project: Node] - Project: Embedding Images and Video
+[The Odin Project: HTML & CSS] - Project: Embedding Images and Video
 </h1>
 
 ## Intro
