@@ -5,9 +5,6 @@
 /* -------------------------------------- */
 :root {
 	--black: #181818;
-	--lightBlack: #202020;
-	--grey: #8f8f8f;
-	--lightGrey: #313131;
 	--darkGrey: #303030;
 }
 
@@ -32,10 +29,6 @@ main {
 
 /* Navigation Header */
 /* -------------------------------------- */
-.header {
-	background-color: var(--lightBlack);
-}
-
 .search-box-container {
 	width: 700px;
 	max-width: 700px;
